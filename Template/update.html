@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="email-bt" placeholder="Name" name="name" id="name"  value="{{updateInfo.name}}"/>
+        </div>
+        <div class="form-group">
+            <input type="text" class="email-bt" placeholder="Email" name="email" id="email" value="{{updateInfo.email}}"/>
+        </div>
+        <div class="form-group">
+            <input type="text" class="email-bt" placeholder="Phone Numbar" name="phone" id="phone" value="{{updateInfo.phone}}"/>
+        </div>
+        <div class="form-group">
+            <input type="text" class="email-bt" placeholder="Message" name="message" id="message" value="{{updateInfo.message}}" />
+            <textarea class="massage-bt" placeholder="Message" rows="5" name="message" id="message"></textarea>
+        </div>
+        <div class="main_bt">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

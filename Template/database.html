@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for newdata in data %}
+              <tr>
+                <td>{{newdata.id}}</td>
+                <td>{{newdata.name}}</td>
+                <td>{{newdata.email}}</td>
+                <td>{{newdata.phone}}</td>
+                <td>{{newdata.message}}</td>
+                <td>
+                    <a href="{% url "update" newdata.id %}"><i class="fa-regular fa-pen-to-square"></i></a>
+                </td>
+                <td>
+                    <a href=""><i class="fa-solid fa-trash"></i></i></a>
+                </td>
+              </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

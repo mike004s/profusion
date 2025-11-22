@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container py-4">
+  {% if user.is_authenticated %}
+    <h1>Edit Profile</h1>
+    
+    <form method="post" enctype="multipart/form-data" class="mt-4">
+      {% csrf_token %}
+      
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input class="form-control" type="text" name="name" value="{{ user.username }}">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input class="form-control" type="email" name="email" value="{{ user.email }}">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Avatar</label>
+        <input class="form-control" type="file" name="avatar" accept="image/*">
+        {% if profile.avatar %}
+          <small class="text-muted">Current: <img src="{{ profile.avatar.url }}" style="height:40px;"></small>
+        {% endif %}
+      </div>
+
+      <button type="submit" class="btn btn-success">Save Changes</button>
+      <a href="{% url 'profile_view' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+  {% else %}
+    <p>Please <a href="{% url 'account_login' %}">log in</a> to edit your profile.</p>
+  {% endif %}
+</div>
+{% endblock %}

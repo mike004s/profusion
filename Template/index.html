@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+
+<!-- header section start -->
+<!-- banner section start -->
+<div class="banner_section layout_padding">
+    <div class="container">
+        <img src="{% static "images/banner-img.png" %}" class="banner_img">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="banner_taital">Start Dance</h1>
+                            <div class="contact_bt"><a href="{% url "contact" %}">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="banner_taital">Start Dance</h1>
+                            <div class="contact_bt"><a href="{% url "contact" %}">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="banner_taital">Start Dance</h1>
+                            <div class="contact_bt"><a href="{% url "contact" %}">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="banner_taital">Start Dance</h1>
+                            <div class="contact_bt"><a href="{% url "contact" %}">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner section end -->
+<!-- service section start -->
+<div class="service_section layout_padding">
+    <div class="container">
+        <h1 class="service_taital">Our Classes</h1>
+        <div class="service_section_2 layout_padding">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-1.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Rock <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-2.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Hip Hop <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-1.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Style <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-1.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Rock <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-1.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Rock <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-2.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Hip Hop <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+                <div class="item">
+                    <div class="image_box">
+                        <img src="{% static "images/img-1.png" %}" alt="#" />
+                    </div>
+                    <h3 class="sound_text">Style <br>Dance</h3>
+                    <div class="buy_bt"><a href="#">Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service section end -->
+<!-- about section start -->
+<div class="about_section layout_padding">
+    <div class="container">
+        <div class="about_main">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="about_taital">About Our dance studio</h1>
+                    <p class="about_text">English. Many desktop publishing <br>packages and web page editors now use
+                        Lorem Ipsum as their default model text, and a search </p>
+                    <div class="about_img"><img src="{% static "images/about-img.png" %}"></div>
+                    <p class="about_text_1">using 'Content here, content here', making it look like readable English.
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                    <div class="readmore_bt"><a href="#">Read More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about section end -->
+<!-- price section start -->
+<div class="price_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="price_taital">Our Price</h1>
+            </div>
+        </div>
+        <div class="price_section_2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="first_price_text">First Price</h3>
+                    <div class="price_box">
+                        <div class="taital_main">
+                            <h4 class="rate_text"><span style="color: #f6815e;">$</span>500</h4>
+                            <p class="month_text">/one month</p>
+                        </div>
+                        <p class="dummy_text">Passages of
+                            Lorem Ipsum
+                            available, but
+                            the majority
+                            have suffered
+                            alteration
+                        </p>
+                        <div class="readmore_bt"><a href="#">Join Now</a></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="first_price_text">Secound Price</h3>
+                    <div class="price_box">
+                        <div class="taital_main">
+                            <h4 class="rate_text"><span style="color: #f6815e;">$</span>1000</h4>
+                            <p class="month_text">/one month</p>
+                        </div>
+                        <p class="dummy_text">Passages of
+                            Lorem Ipsum
+                            available, but
+                            the majority
+                            have suffered
+                            alteration
+                        </p>
+                        <div class="readmore_bt"><a href="#">Join Now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- price section end -->
+<!-- client section start -->
+<div class="client_sectiion">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="client_taital">Testimonial</h1>
+            </div>
+        </div>
+        <div id="custom_slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#custom_slider" data-slide-to="0" class="active"></li>
+                <li data-target="#custom_slider" data-slide-to="1"></li>
+                <li data-target="#custom_slider" data-slide-to="2"></li>
+                <li data-target="#custom_slider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro <span style="float: right;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client_main_2">
+                            <div class="client_right_2">
+                                <h3 class="name_text">Jonyro <span style="float: left;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                            <div class="client_left_2">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro <span style="float: right;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client_main_2">
+                            <div class="client_right_2">
+                                <h3 class="name_text">Jonyro <span style="float: left;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                            <div class="client_left_2">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro <span style="float: right;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client_main_2">
+                            <div class="client_right_2">
+                                <h3 class="name_text">Jonyro <span style="float: left;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                            <div class="client_left_2">
+                                <div class="client_img"><img src="{% static "images/client-img.png" %}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="{% static " images/client-img.png" %}"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro <span style="float: right;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client_main_2">
+                            <div class="client_right_2">
+                                <h3 class="name_text">Jonyro <span style="float: left;"><img src="{% static "images/quick-icon.png" %}"></span></h3>
+                                <p class="dolor_text">Voluptate</p>
+                                <p class="lorem_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eu
+                                </p>
+                            </div>
+                            <div class="client_left_2">
+                                <div class="client_img"><img src="{% static " images/client-img.png" %}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- client section end -->
+<!-- contact section start -->
+<div class="contact_section layout_padding">
+    <div class="container">
+        <h1 class="contact_taital">Get In Touch</h1>
+        <div class="contact_section_2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact_main layout_padding">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Phone Number" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="email-bt" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="massage-bt" placeholder="Message" rows="5" id="comment"
+                                    name="message"></textarea>
+                            </div>
+                            <button type="submit">Send Now</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- contact section end -->
+<!-- footer section start -->
+{% endblock %}

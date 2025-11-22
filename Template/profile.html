@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container py-4">
+  {% if user.is_authenticated %}
+    <h1>My Account</h1>
+    
+    <div class="row mt-4">
+      <div class="col-md-4">
+        {% if profile.avatar %}
+          <img src="{{ profile.avatar.url }}" class="img-fluid rounded" alt="avatar" style="height:200px;object-fit:cover;">
+        {% else %}
+          <img src="{% static 'images/default-avatar.png' %}" class="img-fluid rounded" alt="avatar" style="height:200px;">
+        {% endif %}
+      </div>
+      
+      <div class="col-md-8">
+        <h3>My Details</h3>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Bio:</strong> {{ profile.bio|default:"No bio added yet" }}</p>
+        
+        <a href="{% url 'profile_edit' %}" class="btn btn-primary">Edit Profile</a>
+      </div>
+    </div>
+  {% else %}
+    <p>Please <a href="{% url 'account_login' %}">log in</a> to view this page.</p>
+  {% endif %}
+</div>
+{% endblock %}
