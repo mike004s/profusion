@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(wnn^$h40wa9wa_4m_s3pj802v06f6#j-h2)kixuf(0)@mbiit
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['profusion-kcrl.onrender.com', 'localhost', '127.0.0.1:8000']
 
 
 # Application definition
